@@ -160,6 +160,9 @@ void terminal::drawTable(int count_days) {
 }
 
 void terminal::drawAll() {
+    nlohmann::json config_JSON;
+    std::ifstream file_JSON("config.json");
+    config_JSON = nlohmann::json::parse(file_JSON);
     int count_days = 0;
     int key;
 
@@ -221,7 +224,7 @@ void terminal::drawAll() {
                     endwin();
                     exit(0);
                 }
-                Sleep(5000);
+                Sleep(config_JSON["updateFrequency"]);
             }
             clear();
             drawCurrentDay();
