@@ -2,15 +2,15 @@
 #include <curses.h>
 
 namespace terminal {
-    void drawTable(int count_days);
+    void DrawTable(int count_days);
 
-    void drawCurrentDay();
+    void DrawCurrentDay();
 
-    void drawAll();
+    void DrawAndFollowTerminal();
 
-    void writeTempIntoWin(WINDOW* win, int count);
+    void WriteTempIntoWin(WINDOW * win, int count);
 
-    void makeHeader(WINDOW* win, std::string part_day);
+    void MakeHeader(WINDOW * win, std::string part_day);
 
-    std::string parseWeatherCode(std::string& weather_code);
+    std::string ParseWeatherCode(std::string& weather_code);
 }

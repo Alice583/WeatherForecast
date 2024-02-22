@@ -5,6 +5,6 @@ using namespace terminal;
 
 int main(int argc, char* argv[]) {
     controller::my_header = argv[1];
-    terminal::drawAll();
+    terminal::DrawAndFollowTerminal();
     return 0;
 }

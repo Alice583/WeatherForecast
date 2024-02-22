@@ -46,7 +46,7 @@ namespace privateZone {
 }
 
 namespace JSONs {
-    struct TownJSON {
+    struct TownInfo {
         std::string name;
         std::string latitude;
         std::string longitude;
@@ -55,7 +55,7 @@ namespace JSONs {
         std::string is_capital;
     };
 
-    struct WeatherJSON {
+    struct WeatherInfo {
         std::string latitude;
         std::string longitude;
         std::string generationtime_ms;

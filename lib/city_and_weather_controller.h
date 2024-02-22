@@ -10,12 +10,12 @@ namespace controller {
     std::string my_header;
     const std::string url_weather = "https://api.open-meteo.com/v1/forecast";
     int Hours_of_day = 24;
-    JSONs::TownJSON town_json;
-    JSONs::WeatherJSON weather_json;
+    JSONs::TownInfo town_info;
+    JSONs::WeatherInfo weather_info;
 
-    void writeDescriptionTown(int index_town);
+    void WriteDescriptionTown(int index_town);
 
-    void writeDescriptionWeather();
+    void WriteDescriptionWeather();
 
-    void clearJSON();
+    void ClearInfo();
 }
